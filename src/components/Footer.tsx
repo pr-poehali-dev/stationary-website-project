@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <div className="flex items-center mb-4">
               <Icon name="Heart" className="h-8 w-8 text-blue-400 mr-2" />
@@ -26,6 +26,40 @@ const Footer = () => {
                 <Icon name="Twitter" className="h-5 w-5" />
               </button>
             </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4 flex items-center">
+              <Icon name="Map" className="h-5 w-5 mr-2 text-blue-400" />
+              Карта сайта
+            </h3>
+            <ul className="space-y-2 text-gray-300">
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Главная
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Записаться на приём
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Вызов врача на дом
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Результаты анализов
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  Справочник болезней
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>
@@ -103,8 +137,120 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 МедЦентр+. Все права защищены.</p>
+        <div className="border-t border-gray-800 mt-8 pt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <div>
+              <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                Пациентам
+              </h4>
+              <ul className="space-y-1 text-sm text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Подготовка к анализам
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Памятки пациентам
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Программы диспансеризации
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Медицинские справки
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                Специалисты
+              </h4>
+              <ul className="space-y-1 text-sm text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Кардиолог
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Невролог
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Офтальмолог
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Ортопед
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                Диагностика
+              </h4>
+              <ul className="space-y-1 text-sm text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    УЗИ диагностика
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Лабораторные анализы
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    ЭКГ и ЭХО-КГ
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Рентгенография
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-sm font-semibold text-gray-300 mb-3">
+                О клинике
+              </h4>
+              <ul className="space-y-1 text-sm text-gray-400">
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    История клиники
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Новости и статьи
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Вакансии
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition-colors">
+                    Политика конфиденциальности
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-center text-gray-400">
+            <p>&copy; 2024 МедЦентр+. Все права защищены.</p>
+          </div>
         </div>
       </div>
     </footer>
