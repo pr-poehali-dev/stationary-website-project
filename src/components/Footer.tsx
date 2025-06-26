@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Icon from "@/components/ui/icon";
 
 const Footer = () => {
@@ -35,29 +36,57 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-gray-300">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <Link to="/" className="hover:text-white transition-colors">
                   Главная
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Записаться на приём
-                </a>
+                <Link
+                  to="/services"
+                  className="hover:text-white transition-colors"
+                >
+                  Услуги
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Вызов врача на дом
-                </a>
+                <Link
+                  to="/departments"
+                  className="hover:text-white transition-colors"
+                >
+                  Отделения
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Результаты анализов
-                </a>
+                <Link
+                  to="/doctors"
+                  className="hover:text-white transition-colors"
+                >
+                  Врачи
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Справочник болезней
-                </a>
+                <Link
+                  to="/about"
+                  className="hover:text-white transition-colors"
+                >
+                  О нас
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/contacts"
+                  className="hover:text-white transition-colors"
+                >
+                  Контакты
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/emergency"
+                  className="hover:text-white transition-colors"
+                >
+                  Экстренная помощь
+                </Link>
               </li>
             </ul>
           </div>
